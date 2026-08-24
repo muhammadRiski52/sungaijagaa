@@ -13,9 +13,10 @@ Website Profil Modern Desa Sungai Jaga A, Kecamatan Sungai Raya Kepulauan, Kabup
 ## 📌 Fitur Utama Website
 
 ### 🌐 1. Halaman Publik (`index.html`)
+
 * **Hero Banner Dinamis**: Menampilkan lanskap keindahan sungai tropis Kalimantan yang dikelola langsung dari Portal Admin.
 * **Kilas Sejarah & Peran**: Narasi nilai historis sungai sebagai urat nadi perikanan, pertanian, dan kehidupan masyarakat.
-* **4 Pilar Utama Desa (Bento Grid)**: Visualisasi potensi utama desa (Perikanan & Kelautan, Pertanian & Perkebunan, UMKM Olahan Laut, dan Pariwisata Pesisir).
+* **3 Pilar Utama Potensi Desa (Bento Grid with Sub-Bab)**: Visualisasi mendalam sektor keunggulan desa (Perikanan Tangkap & Kelautan, Pertanian & Perkebunan, serta UMKM Olahan Hasil Laut) lengkap dengan rincian sub-topik, komoditas unggulan, dan tag identitas produk.
 * **Galeri Foto Interaktif**: Dokumentasi foto beresolusi tinggi lengkap dengan fitur Lightbox zoom visual.
 * **Integrasi WhatsApp Langsung**: Tombol kontak resmi ke WhatsApp Kepala Desa yang selalu tersinkronisasi secara real-time.
 
@@ -25,18 +26,19 @@ Website Profil Modern Desa Sungai Jaga A, Kecamatan Sungai Raya Kepulauan, Kabup
 
 Untuk mengakses panel pengelola desa, buka jalur URL `/admin/` atau `admin/index.html`.
 
-### 👨‍💼 Fitur-Fitur di Dalam Dashboard Admin:
+### 👨‍💼 Fitur-Fitur di Dalam Dashboard Admin
+
 1. **⚙️ Pengaturan Umum & Identitas Profil Desa**:
-   - **Nama Kepala Desa**: Mengubah nama resmi Kepala Desa (misal: *Bpk. Supriadi*) yang ditampilkan di footer & bagian informasi website.
-   - **Nomor WhatsApp Resmi**: Mengubah nomor kontak WhatsApp tujuan (format internasional: `628xxxxxxxx`). Seluruh tombol kontak WhatsApp di website publik otomatis terhubung ke nomor baru ini.
+   * **Nama Kepala Desa**: Mengubah nama resmi Kepala Desa (misal: *Bpk. Supriadi*) yang ditampilkan di footer & bagian informasi website.
+   * **Nomor WhatsApp Resmi**: Mengubah nomor kontak WhatsApp tujuan (format internasional: `628xxxxxxxx`). Seluruh tombol kontak WhatsApp di website publik otomatis terhubung ke nomor baru ini.
 2. **🖼️ Pengelola Gambar Utama (Hero Section)**:
-   - Mengunggah foto beranda baru secara langsung via *Drag & Drop*.
-   - Foto otomatis diunggah ke **Supabase Cloud Storage** dan memperbarui tampilan beranda secara *real-time*.
-   - Fitur *Reset* ke gambar bawaan desa jika ingin mengembalikan foto semula.
+   * Mengunggah foto beranda baru secara langsung via *Drag & Drop*.
+   * Foto otomatis diunggah ke **Supabase Cloud Storage** dan memperbarui tampilan beranda secara *real-time*.
+   * Fitur *Reset* ke gambar bawaan desa jika ingin mengembalikan foto semula.
 3. **📸 Koleksi Galeri Dokumentasi Foto**:
-   - Menambahkan foto dokumentasi baru beserta judul/deskripsi foto.
-   - Melihat daftar koleksi foto aktif dengan thumbnail pratinjau.
-   - Menghapus foto dari galeri publik dengan konfirmasi aman.
+   * Menambahkan foto dokumentasi baru beserta judul/deskripsi foto.
+   * Melihat daftar koleksi foto aktif dengan thumbnail pratinjau.
+   * Menghapus foto dari galeri publik dengan konfirmasi aman.
 
 ---
 
@@ -61,12 +63,16 @@ Website ini dibangun dengan standar keamanan modern untuk mencegah peretasan dan
 Website ini menggunakan dua tabel utama di PostgreSQL Supabase:
 
 ### 1. Tabel `settings`
+
 Menyimpan konfigurasi profil global desa:
+
 * `key` (TEXT, Primary Key) - Contoh: `sj_kades_name`, `sj_whatsapp`, `sj_hero_image`
 * `value` (TEXT) - Nilai dari konfigurasi
 
 ### 2. Tabel `gallery`
+
 Menyimpan daftar foto galeri desa:
+
 * `id` (UUID, Primary Key)
 * `created_at` (TIMESTAMP WITH TIME ZONE)
 * `title` (TEXT) - Judul / Deskripsi foto
@@ -77,17 +83,19 @@ Menyimpan daftar foto galeri desa:
 ## 🛠️ Cara Menjalankan Secara Lokal
 
 1. **Clone Repository**:
+
    ```bash
    git clone https://github.com/autumsov/sungaijagaa.git
    cd sungaijagaa
    ```
+
 2. **Jalankan Web Server**:
-   - Menggunakan **Laragon** / **XAMPP** (letakkan di `www` atau `htdocs`).
-   - Atau gunakan ekstensi **Live Server** di VS Code.
+   * Menggunakan **Laragon** / **XAMPP** (letakkan di `www` atau `htdocs`).
+   * Atau gunakan ekstensi **Live Server** di VS Code.
 3. **Konfigurasi Supabase**:
-   - Buka `js/supabase-config.js`.
-   - Masukkan `SUPABASE_URL` dan `SUPABASE_ANON_KEY` dari dashboard Supabase Anda.
-   - Eksekusi script SQL yang ada di panduan setup untuk mengaktifkan tabel & RLS.
+   * Buka `js/supabase-config.js`.
+   * Masukkan `SUPABASE_URL` dan `SUPABASE_ANON_KEY` dari dashboard Supabase Anda.
+   * Eksekusi script SQL yang ada di panduan setup untuk mengaktifkan tabel & RLS.
 
 ---
 

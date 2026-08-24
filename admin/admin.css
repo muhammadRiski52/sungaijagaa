@@ -1,15 +1,15 @@
-/* CSS System Tokens - Rich Tropical Emerald Admin Palette */
+/* CSS System Tokens - Merah Putih Modern Gradient Admin Palette */
 :root {
-  --color-primary: #043927;
-  --color-primary-dark: #022016;
-  --color-primary-light: #10b981;
-  --color-accent: #0284c7;
-  --color-accent-dark: #0369a1;
-  --color-text-dark: #0f172a;
-  --color-text-body: #334155;
-  --color-text-light: #64748b;
-  --color-bg-base: #f8fafc;
-  --color-bg-sidebar: #043927;
+  --color-primary: #dc2626;
+  --color-primary-dark: #450a0a;
+  --color-primary-light: #f87171;
+  --color-accent: #e11d48;
+  --color-accent-dark: #9f1239;
+  --color-text-dark: #1c1917;
+  --color-text-body: #374151;
+  --color-text-light: #6b7280;
+  --color-bg-base: #fafafa;
+  --color-bg-sidebar: #1f0408;
   --color-bg-card: #ffffff;
   --color-white: #ffffff;
   --color-danger: #ef4444;
@@ -23,8 +23,8 @@
   --radius-lg: 24px;
   
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 8px 24px -4px rgba(6, 78, 59, 0.08);
-  --shadow-lg: 0 16px 32px -8px rgba(6, 78, 59, 0.14);
+  --shadow-md: 0 8px 24px -4px rgba(220, 38, 38, 0.08);
+  --shadow-lg: 0 16px 32px -8px rgba(220, 38, 38, 0.14);
   
   --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-normal: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -77,13 +77,13 @@ input, button, select, textarea {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
   color: var(--color-white);
-  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
 }
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(5, 150, 105, 0.4);
+  box-shadow: 0 8px 20px rgba(220, 38, 38, 0.4);
 }
 
 .btn-danger {
@@ -105,12 +105,12 @@ input, button, select, textarea {
 }
 
 .btn-view-site {
-  background-color: rgba(5, 150, 105, 0.1);
-  color: #047857;
-  border: 1px solid rgba(5, 150, 105, 0.2);
+  background-color: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+  border: 1px solid rgba(220, 38, 38, 0.25);
 }
 .btn-view-site:hover {
-  background-color: #047857;
+  background-color: #dc2626;
   color: var(--color-white);
 }
 
@@ -156,7 +156,7 @@ input, button, select, textarea {
   align-items: center;
   justify-content: center;
   padding: 24px;
-  background: radial-gradient(circle at top left, #052e16 0%, #021a0c 100%);
+  background: radial-gradient(circle at top left, #450a0a 0%, #150204 100%);
   min-height: 100vh;
   position: relative;
   overflow: hidden;
@@ -169,7 +169,7 @@ input, button, select, textarea {
   right: 15%;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.25) 0%, transparent 70%);
   filter: blur(50px);
 }
 
@@ -204,7 +204,7 @@ input, button, select, textarea {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background-color: rgba(6, 78, 59, 0.1);
+  background-color: rgba(220, 38, 38, 0.1);
   color: var(--color-primary);
   border-radius: 50%;
   font-size: 1.6rem;
@@ -259,7 +259,7 @@ input, button, select, textarea {
 
 .input-icon-wrapper input:focus {
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(6, 78, 59, 0.15);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
 }
 
 .login-footer {
@@ -497,7 +497,7 @@ input, button, select, textarea {
 
 .panel-form input[type="text"]:focus {
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(6, 78, 59, 0.1);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
 }
 
 .panel-form input[type="file"] {
@@ -533,7 +533,7 @@ input, button, select, textarea {
 
 .file-drop-area:hover, .file-drop-area.dragover {
   border-color: var(--color-primary);
-  background-color: rgba(6, 78, 59, 0.05);
+  background-color: rgba(220, 38, 38, 0.05);
 }
 
 .upload-icon {
@@ -690,7 +690,7 @@ input, button, select, textarea {
   position: fixed;
   bottom: -100px;
   right: 40px;
-  background-color: #064e3b;
+  background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%);
   color: var(--color-white);
   padding: 16px 28px;
   border-radius: var(--radius-md);
@@ -699,7 +699,7 @@ input, button, select, textarea {
   gap: 12px;
   box-shadow: var(--shadow-lg);
   z-index: 10000;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: bottom 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
