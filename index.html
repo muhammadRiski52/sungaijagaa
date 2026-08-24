@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://*.supabase.co wss://*.supabase.co; frame-ancestors 'none'; object-src 'none';">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://*.supabase.co wss://*.supabase.co; frame-ancestors 'none'; object-src 'none';">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Sungai Jaga A - Pesona Sungai Tropis Bengkayang</title>
-  
+
   <!-- SEO Meta Tags -->
   <link rel="icon" href="logo-bengkayang.png" type="image/png">
-  <meta name="description" content="Eksplorasi keindahan alam, potensi wisata, perikanan, pertanian, dan ekosistem lestari Sungai Jaga A, Bengkayang, Kalimantan Barat.">
+  <meta name="description"
+    content="Eksplorasi keindahan alam, potensi wisata, perikanan, pertanian, dan ekosistem lestari Sungai Jaga A, Bengkayang, Kalimantan Barat.">
   <meta name="keywords" content="Sungai Jaga A, Bengkayang, Kalimantan, Wisata Sungai, Irigasi Kalimantan, Desa Wisata">
   <meta name="author" content="Pemerintah Desa Sungai Jaga A">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="index.css">
 
@@ -28,6 +33,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="js/supabase-config.js"></script>
 </head>
+
 <body>
 
   <!-- Sticky Navbar -->
@@ -37,7 +43,7 @@
         <img src="logo-bengkayang.png" alt="Logo Bengkayang" style="height: 42px; width: auto; object-fit: contain;">
         <span class="logo-text">Sungai Jaga A</span>
       </a>
-      
+
       <nav class="nav-menu" id="navMenu">
         <a href="#home" class="nav-link active">Beranda</a>
         <a href="#about" class="nav-link">Tentang</a>
@@ -63,7 +69,7 @@
     <div class="hero-overlay"></div>
     <div class="hero-glow-1"></div>
     <div class="hero-glow-2"></div>
-    
+
     <div class="hero-content">
       <div class="hero-badge animate-fade-in">
         <span class="live-pulse"></span>
@@ -72,7 +78,8 @@
       <h1 class="hero-title animate-fade-in" id="heroTitle">
         Sungai Jaga A - Bengkayang
       </h1>
-      <p class="hero-subtitle animate-fade-in" id="heroSubtitle">Menjaga kelestarian alam dan menyusuri keindahan sungai tropis Kalimantan yang segar, asri, dan menenangkan jiwa.</p>
+      <p class="hero-subtitle animate-fade-in" id="heroSubtitle">Menjaga kelestarian alam dan menyusuri keindahan sungai
+        tropis Kalimantan yang segar, asri, dan menenangkan jiwa.</p>
       <div class="hero-cta animate-fade-in">
         <a href="#contact" class="btn btn-accent btn-lg glow-btn">
           <i data-lucide="sparkles"></i> Eksplorasi
@@ -94,25 +101,44 @@
       <div class="about-image-wrapper scroll-trigger">
         <div class="about-image-decor"></div>
         <div class="glow-orb-behind"></div>
-        <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=800&q=80" alt="Sungai Tropis Asri" class="about-image" id="aboutImg">
+        <img src="images/a (146).jpg" alt="Sungai Tropis Asri" class="about-image" id="aboutImg">
       </div>
       <div class="about-description scroll-trigger" style="padding-top: 10px;">
         <div class="section-tag" style="margin-bottom: 20px;"><i data-lucide="landmark"></i> Kilas Sejarah & Peran</div>
         <h2 class="section-title">Aliran Kehidupan Masyarakat Desa</h2>
         <p class="section-text">
-          Sejak dahulu kala, Sungai Jaga A telah menjadi anugerah alam yang tak ternilai bagi masyarakat Bengkayang. Sungai ini bukan sekadar aliran air, melainkan jantung kehidupan yang menopang peradaban lokal, menyediakan air bersih, mendukung transportasi tradisional, serta mendistribusikan berkah kesuburan tanah di sekitarnya.
+          Sungai Jaga A adalah wilayah pesisir di Kecamatan Sungai Raya, Kabupaten Bengkayang, Provinsi Kalimantan
+          Barat. Sejarahnya tumbuh berdampingan dengan dinamika pemekaran wilayah Kabupaten Bengkayang dari induknya
+          Kabupaten Sambas.
         </p>
         <p class="section-text">
-          Dengan dikelilingi hutan tropis Kalimantan yang asri, keasrian dan ekosistem sungai ini senantiasa dirawat bersama oleh masyarakat adat dan pemerintah setempat. Jernihnya air sungai dan pepohonan rimbun yang membingkainya menciptakan lanskap memukau yang menjaga keseimbangan hayati sekaligus mengundang decak kagum setiap pasang mata yang berkunjung.
+          Desa pesisir ini dikenal memiliki corak kehidupan masyarakat yang sangat erat dengan potensi perikanan serta
+          hasil laut yang melimpah. Selain mengandalkan sektor kelautan, warga setempat memanfaatkan hasil perkebunan
+          seperti kelapa dan pisang, sekaligus mulai aktif mengembangkan industri rumah tangga untuk menopang
+          perekonomian lokal. Kehidupan bermasyarakat di kawasan ini kian melengkapi keunikannya melalui tradisi budaya
+          dan kerukunan antarwarga yang kuat, menciptakan keharmonisan sosial di sepanjang jalur strategis penghubung
+          antardaerah pesisir Kalimantan Barat.
         </p>
         <div class="about-stats-grid">
           <div class="stat-card glass-card">
-            <span class="stat-num">100%</span>
-            <span class="stat-label">Air Alami Kalimantan</span>
+            <span class="stat-num">4940+</span>
+            <span class="stat-label">Jumlah Warga Desa yang terbagi dengan 4 dusun</span>
           </div>
           <div class="stat-card glass-card">
-            <span class="stat-num">500+</span>
-            <span class="stat-label">Kepala Keluarga Terbantu</span>
+            <span class="stat-num">1379</span>
+            <span class="stat-label">Jumlah Warga Dusun Fajar</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-num">1561</span>
+            <span class="stat-label">Jumlah Warga Dusun Timur</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-num">1392</span>
+            <span class="stat-label">Jumlah Warga Dusun Sentosa</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-num">613</span>
+            <span class="stat-label">Jumlah Warga Dusun Melati</span>
           </div>
         </div>
       </div>
@@ -124,47 +150,202 @@
     <div class="container">
       <div class="text-center mb-60 scroll-trigger">
         <div class="section-tag inline-block"><i data-lucide="sparkles"></i> Potensi & Nilai Unggul</div>
-        <h2 class="section-title">4 Pilar Utama Desa</h2>
-        <p class="section-subtitle">Bagaimana aliran sungai memberikan kontribusi vital secara ekologis dan ekonomis bagi masyarakat.</p>
+        <h2 class="section-title">4 Pilar Masyarakat Desa</h2>
+        <p class="section-subtitle">Eksplorasi mendalam mengenai kekuatan ekonomi, ketahanan pangan, dan produk unggulan
+          Desa Sungai Jaga A.</p>
       </div>
 
-      <div class="grid grid-4 scroll-trigger bento-grid">
-        <!-- Card 1 -->
-        <div class="card potential-card bento-card">
-          <div class="card-icon-box blue-accent">
-            <i data-lucide="fish"></i>
+      <div class="grid grid-3 scroll-trigger bento-grid">
+        <!-- Card 1: Perikanan Tangkap & Kelautan -->
+        <div class="card potential-card bento-card" onclick="openPotentialModal('perikanan')">
+          <div class="card-header-meta">
+            <div class="card-icon-box blue-accent">
+              <i data-lucide="fish"></i>
+            </div>
+            <span class="sector-badge"><i data-lucide="anchor"></i> Maritim & Bahari</span>
           </div>
-          <h3 class="card-title">Perikanan Tangkap & Kelautan</h3>
-          <p class="card-text">Sebagai desa di kawasan pesisir Kepulauan, potensi hasil tangkapan laut dan sungai menjadi tulang punggung ekonomi utama bagi para nelayan setempat.</p>
+
+          <h3 class="card-title">Perikanan Tangkap & Budidaya</h3>
+          <p class="card-text">Kawasan perairan muara dan laut Sungai Jaga A menjadi sumber mata pencaharian utama
+            ratusan keluarga nelayan dengan hasil tangkapan laut segar melimpah.</p>
+
+          <!-- Sub-Bab Rincian Detail -->
+          <div class="potential-subsections">
+            <div class="sub-topic-item">
+              <div class="sub-topic-header">
+                <i data-lucide="check-circle-2"></i>
+                <span>Budidaya Unggulan</span>
+              </div>
+              <p class="sub-topic-desc">Budidaya udang yang mellimpah.</p>
+            </div>
+
+            <div class="sub-topic-item">
+              <div class="sub-topic-header">
+                <i data-lucide="ship"></i>
+                <span>Armada & Wilayah Tangkap</span>
+              </div>
+              <p class="sub-topic-desc">Puluhan kapal motor tradisional dengan metode tangkap ramah lingkungan.</p>
+            </div>
+          </div>
+
+          <!-- Tags Komoditas -->
+          <div class="potential-tags">
+            <span class="tag-pill"><i data-lucide="tag"></i> Tenggiri</span>
+            <span class="tag-pill"><i data-lucide="tag"></i> Kakap & Bawal</span>
+            <span class="tag-pill"><i data-lucide="tag"></i> Udang Rebon</span>
+          </div>
+
+          <button class="btn btn-potential-detail" onclick="event.stopPropagation(); openPotentialModal('perikanan')">
+            <i data-lucide="info"></i> Lihat Rincian Lengkap
+          </button>
         </div>
 
-        <!-- Card 2 -->
-        <div class="card potential-card bento-card">
-          <div class="card-icon-box green-accent">
-            <i data-lucide="leaf"></i>
+        <!-- Card 2: Pertanian & Perkebunan -->
+        <div class="card potential-card bento-card" onclick="openPotentialModal('pertanian')">
+          <div class="card-header-meta">
+            <div class="card-icon-box green-accent">
+              <i data-lucide="sprout"></i>
+            </div>
+            <span class="sector-badge"><i data-lucide="leaf"></i> Agraris & Pangan</span>
           </div>
+
           <h3 class="card-title">Pertanian & Perkebunan</h3>
-          <p class="card-text">Lahan yang subur dimanfaatkan masyarakat untuk bercocok tanam padi, hortikultura, serta perkebunan kelapa yang menopang ketahanan pangan desa.</p>
+          <p class="card-text">Lahan daratan subur di sepanjang aliran sungai dimanfaatkan optimal untuk pertanian
+            pangan dan sentra perkebunan kelapa produktif warga.</p>
+
+          <!-- Sub-Bab Rincian Detail -->
+          <div class="potential-subsections">
+            <div class="sub-topic-item">
+              <div class="sub-topic-header">
+                <i data-lucide="check-circle-2"></i>
+                <span>Komoditas Unggulan</span>
+              </div>
+              <p class="sub-topic-desc">Pisang, kelapa, sawit, pinang, padi, cabai dan hasil kebun lainnya.
+              </p>
+            </div>
+
+            <div class="sub-topic-item">
+              <div class="sub-topic-header">
+                <i data-lucide="trees"></i>
+                <span>Sentra Pertanian</span>
+              </div>
+              <p class="sub-topic-desc">Sentra pertanian yang luas dan menjadi bidang fokus utama warga desa melalui
+                sawit, kelapa, pinang dan pisang.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tags Komoditas -->
+          <div class="potential-tags">
+            <span class="tag-pill"><i data-lucide="tag"></i> Sawit</span>
+            <span class="tag-pill"><i data-lucide="tag"></i> Kelapa</span>
+            <span class="tag-pill"><i data-lucide="tag"></i> Pinang</span>
+            <span class="tag-pill"><i data-lucide="tag"></i> Pisang</span>
+          </div>
+
+          <button class="btn btn-potential-detail" onclick="event.stopPropagation(); openPotentialModal('pertanian')">
+            <i data-lucide="info"></i> Lihat Rincian Lengkap
+          </button>
         </div>
 
-        <!-- Card 3 -->
-        <div class="card potential-card bento-card">
-          <div class="card-icon-box amber-accent">
-            <i data-lucide="package"></i>
+        <!-- Card 3: UMKM Lokal -->
+        <div class="card potential-card bento-card" onclick="openPotentialModal('umkm')">
+          <div class="card-header-meta">
+            <div class="card-icon-box amber-accent">
+              <i data-lucide="package"></i>
+            </div>
+            <span class="sector-badge"><i data-lucide="award"></i> Olahan & Hilirisasi</span>
           </div>
-          <h3 class="card-title">UMKM Olahan Hasil Laut</h3>
-          <p class="card-text">Pemberdayaan masyarakat dalam memproduksi produk unggulan lokal seperti ikan asin, ebi, dan terasi yang bernilai jual kompetitif di pasar.</p>
+
+          <h3 class="card-title">UMKM Lokal</h3>
+          <p class="card-text">UMKM di Desa (ekonomi perdesaan) menjadi fondasi utama pertumbuhan ekonomi dari akar
+            rumput dengan memaksimalkan potensi lokal.</p>
+
+          <!-- Sub-Bab Rincian Detail -->
+          <div class="potential-subsections">
+            <div class="sub-topic-item">
+              <div class="sub-topic-header">
+                <i data-lucide="check-circle-2"></i>
+                <span>Produk Khas Unggulan</span>
+              </div>
+              <p class="sub-topic-desc">Gula merah, produsen tahu tradisional dan industri meubel.
+              </p>
+            </div>
+
+            <div class="sub-topic-item">
+              <div class="sub-topic-header">
+                <i data-lucide="sparkles"></i>
+                <span>Kelompok Produsen Mikro</span>
+              </div>
+              <p class="sub-topic-desc">Pembuatan tahu dengan proses tradisional yang diikuti sekelompok kecil sebagai
+                usaha mikro.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tags Komoditas -->
+          <div class="potential-tags">
+            <span class="tag-pill"><i data-lucide="tag"></i> Ikan Asin</span>
+            <span class="tag-pill"><i data-lucide="tag"></i> Gula merah</span>
+            <span class="tag-pill"><i data-lucide="tag"></i> Produsen Tahu</span>
+          </div>
+
+          <button class="btn btn-potential-detail" onclick="event.stopPropagation(); openPotentialModal('umkm')">
+            <i data-lucide="info"></i> Lihat Rincian Lengkap
+          </button>
         </div>
 
-        <!-- Card 4 -->
-        <div class="card potential-card bento-card">
-          <div class="card-icon-box teal-accent">
-            <i data-lucide="palmtree"></i>
+        <!-- Card 4: Peternakan Lokal -->
+        <div class="card potential-card bento-card" onclick="openPotentialModal('peternakan')">
+          <div class="card-header-meta">
+            <div class="card-icon-box"
+              style="background: linear-gradient(135deg, #7c3aed22, #7c3aed44); color: #7c3aed;">
+              <i data-lucide="beef"></i>
+            </div>
+            <span class="sector-badge"><i data-lucide="zap"></i> Pangan & Hewani</span>
           </div>
-          <h3 class="card-title">Pariwisata & Pesisir</h3>
-          <p class="card-text">Potensi panorama alam perairan dan kelestarian ekosistem pesisirnya membuka peluang besar bagi pengembangan kawasan ekowisata daerah masa depan.</p>
+
+          <h3 class="card-title">Peternakan Lokal</h3>
+          <p class="card-text">Usaha peternakan rakyat di Desa Sungai Jaga A menjadi sumber protein hewani dan penopang
+            ekonomi keluarga dengan memanfaatkan lahan sekitar permukiman.</p>
+
+          <!-- Sub-Bab Rincian Detail -->
+          <div class="potential-subsections">
+            <div class="sub-topic-item">
+              <div class="sub-topic-header">
+                <i data-lucide="check-circle-2"></i>
+                <span>Hewan Ternak Unggulan</span>
+              </div>
+              <p class="sub-topic-desc">Sapi, kambing, babi, ayam, dan bebek lokal sebagai komoditas unggulan yang
+                dikelola warga desa.</p>
+            </div>
+
+            <div class="sub-topic-item">
+              <div class="sub-topic-header">
+                <i data-lucide="trending-up"></i>
+                <span>Pengembangan & Pasar</span>
+              </div>
+              <p class="sub-topic-desc">Hasil ternak dipasarkan ke pasar lokal Bengkayang dan tersedia untuk kebutuhan
+                hari besar keagamaan.</p>
+            </div>
+          </div>
+
+          <!-- Tags Komoditas -->
+          <div class="potential-tags">
+            <span class="tag-pill"><i data-lucide="tag"></i> Sapi Lokal</span>
+            <span class="tag-pill"><i data-lucide="tag"></i> Kambing</span>
+            <span class="tag-pill"><i data-lucide="tag"></i> Babi</span>
+            <span class="tag-pill"><i data-lucide="tag"></i> Ayam</span>
+            <span class="tag-pill"><i data-lucide="tag"></i> Bebek</span>
+          </div>
+
+          <button class="btn btn-potential-detail" onclick="event.stopPropagation(); openPotentialModal('peternakan')">
+            <i data-lucide="info"></i> Lihat Rincian Lengkap
+          </button>
         </div>
+
       </div>
+    </div>
     </div>
   </section>
 
@@ -173,12 +354,37 @@
     <div class="container">
       <div class="text-center mb-60 scroll-trigger">
         <div class="section-tag inline-block"><i data-lucide="image"></i> Dokumentasi Visual</div>
-        <h2 class="section-title">Galeri Keindahan Sungai</h2>
-        <p class="section-subtitle">Galeri foto yang dikelola secara dinamis untuk mendokumentasikan sudut asri Sungai Jaga A.</p>
+        <h2 class="section-title">Galeri Desa</h2>
+        <p class="section-subtitle">Galeri foto yang dimiliki oleh Desa Sungai Jaga A.</p>
       </div>
 
-      <div class="gallery-grid scroll-trigger" id="galleryGrid">
-        <!-- Dynamic content from localStorage/fallback will be injected here by JS -->
+      <!-- Carousel Wrapper -->
+      <div class="gallery-carousel-wrapper scroll-trigger">
+        <!-- Header: count badge + nav buttons -->
+        <div class="gallery-carousel-header">
+          <span class="gallery-count-badge" id="galleryCountBadge">
+            <i data-lucide="images"></i>
+            <span id="gallerySlideInfo">1 / 0</span> Foto
+          </span>
+          <div class="gallery-nav-buttons">
+            <button class="gallery-nav-btn" id="galleryPrevBtn" aria-label="Sebelumnya">
+              <i data-lucide="chevron-left"></i>
+            </button>
+            <button class="gallery-nav-btn" id="galleryNextBtn" aria-label="Berikutnya">
+              <i data-lucide="chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Slider Track -->
+        <div class="gallery-slider-viewport" id="galleryViewport">
+          <div class="gallery-slider-track" id="gallerySliderTrack">
+            <!-- Items injected by JS -->
+          </div>
+        </div>
+
+        <!-- Dot Indicators -->
+        <div class="gallery-dots" id="galleryDots"></div>
       </div>
     </div>
   </section>
@@ -189,18 +395,20 @@
       <div class="footer-top grid-2 mb-60 scroll-trigger" style="gap: 60px; align-items: start;">
         <div class="footer-info">
           <a href="#home" class="logo mb-30" style="display: flex; align-items: center; margin-bottom: 25px;">
-            <img src="logo-bengkayang.png" alt="Logo Bengkayang" style="height: 52px; width: auto; object-fit: contain;">
+            <img src="logo-bengkayang.png" alt="Logo Bengkayang"
+              style="height: 52px; width: auto; object-fit: contain;">
             <span class="logo-text" style="font-size: 1.6rem; margin-left: 10px;">Sungai Jaga A</span>
           </a>
           <p class="footer-desc" style="margin-bottom: 30px; line-height: 1.8;">
-            Pemerintah Desa Sungai Jaga A, Kecamatan Sungai Raya Kepulauan, Kabupaten Bengkayang, Kalimantan Barat, Indonesia.
+            Pemerintah Desa Sungai Jaga A, Kecamatan Sungai Raya Kepulauan, Kabupaten Bengkayang, Kalimantan Barat,
+            Indonesia.
           </p>
           <div class="footer-meta">
             <div class="meta-item">
               <i data-lucide="user"></i>
               <div>
                 <span class="label">Kepala Desa Jaga A</span>
-                <strong class="value" id="kadesName">Bpk. Supriadi</strong>
+                <strong class="value" id="kadesName">Bpk. Hariyono</strong>
               </div>
             </div>
             <div class="meta-item">
@@ -216,8 +424,10 @@
         <div class="footer-cta-box" style="margin-top: 20px;">
           <div class="cta-inner">
             <h3 class="cta-title">Hubungi Kami Secara Langsung</h3>
-            <p class="cta-text">Punya pertanyaan seputar kunjungan wisata, koordinasi instansi, atau program kerja sama desa? Silakan hubungi WhatsApp Kepala Desa kami.</p>
-            <a href="#" target="_blank" class="btn btn-accent btn-lg btn-whatsapp w-full block text-center" id="footerWhatsappBtn">
+            <p class="cta-text">Punya pertanyaan seputar kunjungan wisata, koordinasi instansi, atau program kerja sama
+              desa? Silakan hubungi WhatsApp Kepala Desa kami.</p>
+            <a href="#" target="_blank" class="btn btn-accent btn-lg btn-whatsapp w-full block text-center"
+              id="footerWhatsappBtn">
               <i data-lucide="phone-call"></i> Chat WhatsApp Kepala Desa
             </a>
           </div>
@@ -234,6 +444,27 @@
     </div>
   </footer>
 
+  <!-- Modal Pop-Up Informasi Detail Potensi Desa -->
+  <div class="modal-backdrop" id="potentialModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button class="modal-close" id="potentialModalClose" aria-label="Tutup"><i data-lucide="x"></i></button>
+      <div class="modal-header-banner">
+        <span class="modal-badge" id="modalBadge">Sektor</span>
+        <h2 class="modal-title" id="modalTitle">Judul Potensi</h2>
+        <p class="modal-subtitle" id="modalSubtitle">Deskripsi singkat potensi desa.</p>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Content will be injected dynamically by JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closePotentialModal()">Tutup</button>
+        <a href="#" target="_blank" class="btn btn-primary btn-whatsapp" id="modalWhatsappBtn">
+          <i data-lucide="message-circle"></i> Tanya Informasi ke Kades
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- Lightbox Modal for Gallery -->
   <div class="lightbox" id="lightboxModal">
     <button class="lightbox-close" id="lightboxClose" aria-label="Tutup"><i data-lucide="x"></i></button>
@@ -245,4 +476,5 @@
   <!-- Main JavaScript File -->
   <script src="js/app.js"></script>
 </body>
+
 </html>
